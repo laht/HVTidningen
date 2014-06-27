@@ -1,0 +1,44 @@
+<html>
+<body>
+<div id="main">	
+
+	<div id="order-form">
+
+		<form name="contactform" method="post" action="send_form_email.php">
+			<fieldset>
+				<legend>Kontaktuppgifter</legend>
+			    <label>Förnamn:<input  type="text" name="first_name" maxlength="50" size="30"></label>			 		  	
+			    <label>Efternamn:<input  type="text" name="last_name" maxlength="50" size="30"></label>			 		
+				<label>Epostadress:<input  type="text" name="email" maxlength="80" size="30"></label>			
+				<label>Telefonnummer:<input  type="text" name="telephone" maxlength="30" size="30"></label>		
+				<label>Adress:<input  type="text" name="address" maxlength="30" size="30"></label>
+				<label>Ort:<input  type="text" name="city" maxlength="30" size="30"></label>
+				<label>Postnummer:<input  type="text" name="zipcode" maxlength="30" size="30"></label>
+			</fieldset>
+			<fieldset>
+				<legend>Produkt</legend>
+				<label>Ved i container<input type="radio" name="product" value="Ved i container"></label>
+				<label>Vedsäck 1 m3<input type="radio" name="product" value="Vedsäck 1 m3"></label>
+				<label>Vedsäck 40L<input type="radio" name="product" value="Vedsäck 40"></label>
+			</fieldset>	
+			<fieldset>
+				<legend>Vedtyp:</legend>
+				<label>Björkved<input type="radio" name="woodtype" value="Björkved"></label>
+				<label>Blandved<input type="radio" name="woodtype" value="Blandved"></label>					
+			</fieldset>
+			<fieldset>
+				<legend>Frakt:</legend>
+				<label>Leverans<input type="radio" name="shippment" value="Leverans"></label>
+				<label>Avhämtning<input type="radio" name="shippment" value="Avhämtning"></label>
+			</fieldset>
+
+			<input type="submit" value="Submit">
+			
+		</form>
+
+	</div>
+
+
+</div>
+</body>
+</html
