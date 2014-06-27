@@ -1,0 +1,78 @@
+#hv-twitter {
+	height: 342px;
+	overflow-y: hidden;
+	position: relative;
+}
+
+#hv-twitter .twitter-header {
+	padding: 4px 8px;
+	background: #09C;
+	float: left;
+}
+
+#hv-twitter .twitter-header h2 {
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin: 0;
+	line-height: 12px;
+}
+
+#hv-twitter .ajax-loader {
+	height: 30px;
+	width: 30px;
+	background-image: url('img/loader.gif');
+	background-size: contain;
+	margin: 100px auto 0;
+}
+
+#hv-twitter .tweets {	
+	.background: #576875;
+}
+
+#hv-twitter .tweet {
+	color: #fff;
+	margin-bottom: 30px;
+}
+
+#hv-twitter .tweet:first-child {
+	border: none;
+}
+
+#hv-twitter .tweet a {
+	color: inherit;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#hv-twitter .tweet a span {
+	color: #ddd;
+	font-size: 11px;
+}
+
+#hv-twitter .tweet .author {
+	float: left;
+}
+
+#hv-twitter .tweet .time {
+	color: #999;
+	margin-bottom: 3px;
+	font-size: 11px;
+}
+
+#hv-twitter .tweet .body {
+	font-size: 11px;
+	line-height: 22px;
+}
+
+#hv-twitter .tweet .body a {
+	font-size: 11px;
+}
+
+#hv-twitter .tweet .body .hashtag {
+	padding: 2px 5px;
+	background: #D9EBFA;
+	border-radius: 3px;
+	color: #111;
+	font-weight: normal;
+}

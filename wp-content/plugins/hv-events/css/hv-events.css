@@ -1,0 +1,532 @@
+@charset "utf-8";
+div#hv-events #view-changer {
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	display: table;
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+div#hv-events #view-changer div.icon,
+div#hv-events #view-changer div.icon {
+	height: 29px;
+	width: 29px;
+	background-size: cover;
+	float: left;
+	opacity: 0.4;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+	margin-right: 10px;
+}
+
+div#hv-events #view-changer div.active {
+	opacity: 1;
+}
+
+div#hv-events #view-changer div:hover,
+div#hv-events #view-changer div:hover {
+	cursor: pointer;
+	opacity: 1;
+}
+
+div#hv-events #view-changer #calendar {
+	background-image: url('images/events-calendar-icon.png');
+}
+
+div#hv-events #view-changer #tiles {
+	background-image: url('images/events-tiles-icon.png');
+}
+
+div#hv-events #view-changer #rows {
+	background-image: url('images/events-rows-icon.png');
+	margin-right: 0;
+}
+
+div#hv-events #view-changer #save-view {
+	position: absolute;
+	top: -25px;
+	left: 0;
+	width: 100%;
+	padding: 2px 3px;
+	background: #333;
+	color: #fff;
+	border-radius: 4px;
+	opacity: 0.3;
+	font-size: 11px;
+	line-height: 14px;
+	text-align: center;
+}
+
+div#hv-events #view-changer #save-view:hover {
+	cursor: pointer;
+	opacity: 1;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+
+div#hv-events header.events-title,
+div#hv-events .collapse-trigger {
+	float: left;
+	margin-bottom: 10px;
+}
+
+div#hv-events header.events-title h2 {
+	font-size: 24px;
+	line-height: 24px;
+	margin: 0;
+}
+
+div#hv-events .collapse-trigger {
+	height: 25px;
+	line-height: 25px;
+	margin-left: 25px;
+	font-size: 12px;
+	background: #333;
+	color: #fff;
+	border-radius: 4px;
+	padding: 0 5px;
+	opacity: 0.3;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+div#hv-events .collapse-trigger:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+div#hv-events a.tile {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+div#hv-events a.tile:last-child {
+	margin-right: 0;
+}
+
+div#hv-events a.tile,
+div#hv-events a.tile div.title,
+div#hv-events a.tile div.date {
+	height: 160px;
+}
+
+div#hv-events a.tile {
+	position: relative;
+	display: block;
+	float: left;
+	width: 190px;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 3px;
+}
+
+div#hv-events div.past a.tile {
+	background: #999;
+	color: #fff;
+	border-color: #aaa;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7),
+	0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+div#hv-events div.upcoming a.tile {
+	background: #fff;
+	color: #333;
+	border-color: #efefef;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7),
+	0 0 0 1px rgba(0, 0, 0, 0.15);
+}
+
+div#hv-events a.tile .title {
+	width: 120px;
+	float: left;
+	font-size: 12px;
+	line-height: 18px;
+	padding: 5px 5px 10px 5px;
+	word-wrap: break-word;
+}
+
+div#hv-events a.tile .date {
+	float: right;
+	width: 70px;
+}
+
+div#hv-events div.past a.tile .date {
+	background: #aaa;
+}
+
+div#hv-events div.upcoming a.tile .date {
+	background: #efefef;
+	color: #444;
+}
+
+div#hv-events a.tile span.day {
+	display: block;
+	font-size: 60px;
+	line-height: 60px;
+}
+
+div#hv-events a.tile span.month {
+	display: table;
+	margin: 0 auto;
+	font-size: 30px;
+	line-height: 30px;
+}
+
+div#hv-events a.tile span.year {
+	display: table;
+	margin: 5px auto 0;
+	font-size: 24px;
+	line-height: 24px;
+}
+
+div#hv-events section#event-rows .legend {
+	display: table;
+	padding: 10px;
+	margin: 0 0 10px;
+	background: #fff;
+	font-size: 12px;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+
+div#hv-events section#event-rows .legend .legend-box {
+	height: 20px;
+	width: 20px;
+	margin: 5px 8px 0 0;
+	float: left;
+}
+
+div#hv-events section#event-rows .legend .past .legend-box {
+	background: #f04e37;
+}
+
+div#hv-events section#event-rows .legend .upcoming .legend-box {
+	background: #fff33e;
+}
+
+div#hv-events section#event-rows .legend .past:hover,
+div#hv-events section#event-rows .legend .upcoming:hover {
+	cursor: pointer;
+	color: #000;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+div#hv-events section#event-rows .legend > div > span {
+	font-size: 10px;
+	color: #aaa;
+}
+
+div#hv-events a.row {
+	position: relative;
+	display: block;
+	width: 100%;
+	padding: 15px 15px 15px 25px;
+	border-left: 10px solid #fff33e;
+	background: #fff;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+	margin-bottom: 13px;
+	color: #333;
+}
+
+div#hv-events a.row:last-child {
+	margin-bottom: 0;
+}
+
+div#hv-events a.row:hover {
+	text-decoration: none;
+	background: #ddd;
+}
+
+div#hv-events a.past {
+	border-color: #f04e37;
+}
+
+div#hv-events a.row .left,
+div#hv-events a.row .right {
+	width: 50%;
+	float: left;
+}
+
+div#hv-events a.row .title {
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 24px;
+}
+
+div#hv-events a.row .venue {
+	font-size: 14px;
+	line-height: 14px;
+	margin: 5px 0 0;
+}
+
+div#hv-events a.row .date {
+	margin: 10px 0 0;
+	color: #555;
+	font-size: 12px;
+	line-height: 18px;
+}
+
+div#hv-events a.row .date span {
+	display: block;
+}
+
+div#hv-events a.row .description {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+div#hv-events section#calendar *,
+div#hv-events section#calendar *:after,
+div#hv-events section#calendar *:before {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+div#hv-events section#calendar .hv-calendar-container {
+	margin-top: 25px;
+	height: auto;
+	background: #fafafa;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
+}
+
+div#hv-events section#calendar .hv-header {
+	position: relative;
+	height: 70px;
+	padding: 5px 0;
+}
+
+div#hv-events section#calendar .hv-header div#previous,
+div#hv-events section#calendar .hv-header div#next {
+	position: absolute;
+	top: 50%;
+	height: 16px;
+	width: 16px;
+	margin-top: -8px;
+	background-size: cover;
+}
+
+div#hv-events section#calendar .hv-header div#previous:hover,
+div#hv-events section#calendar .hv-header div#next:hover {
+	cursor: pointer;
+}
+
+div#hv-events section#calendar .hv-header div#previous {
+	background-image: url('images/events-left-arrow.png');
+	left: 25px;
+}
+
+div#hv-events section#calendar .hv-header div#next {
+	background-image: url('images/events-right-arrow.png');
+	right: 25px;
+}
+
+div#hv-events section#calendar .hv-header .hv-legend {
+	display: table;
+	margin: 0 auto;
+	text-align: center;
+}
+
+div#hv-events section#calendar .hv-header .hv-legend .month {
+	display: block;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 16px;
+	margin-top: 14px;
+}
+
+div#hv-events section#calendar .hv-header .hv-legend .year {
+	display: block;
+	font-size: 11px;
+	line-height: 11px;
+	color: #aaa;
+	text-align: center;
+	width: 50px;
+	margin: 3px auto 0;
+}
+
+div#hv-events section#calendar .hv-head > div,
+div#hv-events section#calendar .hv-row > div {
+	float: left;
+	height: 100%;
+	position: relative;
+	width: calc(100% / 7);
+}
+
+div#hv-events section#calendar .hv-head {
+	height: 30px;
+	padding: 0 25px;
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+}
+
+div#hv-events section#calendar .hv-head:after {
+	content: '.';
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	clear: both;
+}
+
+div#hv-events section#calendar .hv-head > div {
+	padding: 0 5px;
+}
+
+div#hv-events section#calendar .hv-body {
+	height: calc(100% - 30px);
+	padding: 20px;
+	background: #EFEFEF;
+}
+
+div#hv-events section#calendar .hv-row {
+	border: 1px solid #aaa;
+	border-top: 0;
+}
+
+div#hv-events section#calendar .hv-row:first-child {
+	border-top: 1px solid #aaa;
+}
+
+div#hv-events section#calendar .hv-row > div {
+	border-left: 1px solid #aaa;
+	height: 90px;
+	font-size: 12px;
+	background: #fff;
+}
+
+div#hv-events section#calendar .hv-row > div:empty {
+	background: #eee;
+}
+
+div#hv-events section#calendar .hv-row > div:first-child {
+	border: none;
+}
+
+div#hv-events section#calendar .hv-row > div.today {
+	background: #f04e37;
+	color: #fff;
+	font-weight: bold;
+}
+
+div#hv-events section#calendar .hv-row > div > span.hv-date {
+	position: relative;
+	top: 0;
+	left: 13px;
+}
+
+div#hv-events section#calendar .hv-row > div > .event {
+	display: block;
+	background: #6CF;
+	padding: 0px 3px;
+	text-align: center;
+	border-radius: 2px;
+	font-size: 11px;
+	line-height: 16.5px;
+	word-wrap: break-word;
+	margin: 0 3px 5px;
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+div#hv-events section#calendar .hv-row > div > .event:hover {
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+}
+
+div#hv-events section#calendar .hv-row > div > *:last-child {
+	margin-bottom: 0;
+}
+
+table.event-table .bold {
+	font-weight: bold;
+}
+
+table.event-table {
+	margin: 20px 0;
+	padding: 10px;
+	border-collapse: separate;
+	background: #fafafa;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+}
+
+table.event-table tr {
+	margin-bottom: 10px;
+}
+
+table.event-table td {
+	padding: 5px 10px;
+	vertical-align: middle;
+	border-bottom: 1px solid #aaa;
+	max-width: 100%;
+	font-size: 12px;
+}
+
+table.event-table tr:last-child td {
+	border: none;
+}
+
+a.event-list-item {
+	display: block;
+	color: #333;
+	padding: 10px;
+	border-radius: 4px;
+}
+
+a.event-list-item:hover {
+	text-decoration: none;
+	background-image: -ms-linear-gradient(left, #F0F0F0 0%, #FFFFFF 100%);
+	background-image: -moz-linear-gradient(left, #F0F0F0 0%, #FFFFFF 100%);
+	background-image: -o-linear-gradient(left, #F0F0F0 0%, #FFFFFF 100%);
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #F0F0F0), color-stop(1, #FFFFFF));
+	background-image: -webkit-linear-gradient(left, #F0F0F0 0%, #FFFFFF 100%);
+	background-image: linear-gradient(to right, #F0F0F0 0%, #FFFFFF 100%);
+}
+
+a.event-list-item:hover > .event-date {
+	background: #aaa;
+	color: #333;
+}
+
+a.event-list-item .event-title {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+a.event-list-item .event-venue {
+	font-size: 10px;
+}
+
+a.event-list-item .event-date {
+	float: left;
+	height: 30px;
+	width: 75px;
+	text-align: center;
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	line-height: 30px;
+	padding: 0 5px;
+	border-radius: 4px;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+div#map-container {
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+div#map-canvas {
+	height: 250px;
+	width: 100%;
+}
+

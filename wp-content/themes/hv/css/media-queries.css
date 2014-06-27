@@ -1,0 +1,219 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media only screen
+and (max-width: 999px) {
+	#main-header {
+		width: 100%;
+		float: none;
+		border: none;
+		margin: 0 0 5px;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+	
+	#main-header a, #main-header a img {
+		display: inline;
+	}
+	
+	#main-header hr {
+		display: none;
+	}
+	
+	#main-nav {
+		width: 75%;
+		line-height: 35px;
+	}
+	
+	#main-nav a {
+		padding: 0 10px;
+	}
+	
+	#search-box {
+		margin: 0;
+		padding-bottom: 9px;
+	}
+}
+
+@media only screen
+and (max-width: 995px) {
+	#main-header hr {
+		display: none;
+	}
+}
+
+@media only screen
+and (max-width: 781px) {
+	#main-nav {
+		width: 100%;
+		border: 0;
+		margin: 0;
+	}
+	
+	#search-box {
+		position: relative;
+		float: left;
+		width: 100%;
+		border: 0;
+		padding-bottom: 0;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
+	#search-box #search-input {
+		height: 36px;
+	}
+	
+	#search-box #search-submit {
+		height: 36px;
+	}
+	
+	#main {
+		margin-bottom: 20px;
+	}
+	
+	#main:before {
+		content: ".";
+		display: block;
+		overflow: hidden;
+		visibility: hidden;
+		font-size: 0;
+		line-height: 0;
+		width: 0;
+		height: 0;
+		clear: both;
+	}
+	
+	.front-page article.post .post-thumbnail, article.archive div.post-thumbnail {
+		margin: 0 0 10px;
+		float: none;
+	}
+	
+	.front-page article.post .post-thumbnail img, article.archive div.post-thumbnail img {
+		max-width: 100%;
+	}
+	
+	article.category-bildspel .gallery-thumbnail {
+		padding: 15px;
+	}
+	
+	article.category-bildspel .gallery-thumbnail img {
+		box-shadow: none;
+	}
+	
+	table.event-table {
+		width: 100%;
+	}
+	
+	div#hv-events > section {
+		margin-top: 40px;
+	}
+	
+	div#hv-events div#view-changer {
+		margin-top: 15px;
+	}
+}
+
+@media only screen
+and (max-width: 481px) {
+	#main-nav .menu-item {
+		width: 100%;
+		text-align: center;
+	}
+	
+	#main-nav .menu-item a {
+		padding: 0;
+		border-radius: 8px;
+		background: #333;
+		color: #fff;
+		margin-bottom: 5px;
+	}
+	
+	#main-nav .menu-item a:hover {
+		margin-bottom: 3px;
+	}
+	
+	#main-nav .current-menu-item a:hover {
+		background-image: none;
+	}
+	
+	a.event {
+		width: 140px;
+	}
+	
+	a.event div.title {
+		width: 100px;
+		padding-top: 15px;
+	}
+	
+	a.event div.date {
+		width: 40px;
+		padding-top: 25px;
+		text-align: center;
+	}
+	
+	a.event div.date span.day {
+		font-size: 32px;
+		line-height: 32px;
+	}
+	
+	a.event div.date span.month {
+		font-size: 18px;
+		line-height: 18px;
+	}
+	
+	div#hv-events div.events a.tile {
+		width: calc((100% / 2) - 16px);
+	}
+	
+	div#hv-events div.events a.tile div.title {
+		width: 70%;
+	}
+	
+	div#hv-events div.events a.tile div.date {
+		width: 30%;
+		text-align: center;
+	}
+	
+	div#hv-events div.events a.tile div.date span.day {
+		font-size: 35px;
+		line-height: 35px;
+	}
+	
+	div#hv-events div.events a.tile div.date span.month {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	
+	div#hv-events div.events a.tile div.date span.year {
+		font-size: 17px;
+		line-height: 17px;
+	}
+	
+	div#hv-events section#calendar .hv-row > div > a.event {
+		font-size: 0;
+		line-height: 0;
+		height: 15px;
+		width: 100%;
+		border-radius: 0;
+		margin: 0 0 5px;
+	}
+}
+
+@media only screen
+and (max-width: 371px) {
+	.post .post-meta > * {
+	margin-right: 10px;
+	}
+	
+	.post .post-meta > *:last-child {
+		margin-right: 0;
+	}
+}
+
+@media only screen
+and (max-width: 360px) {
+	table.event-table {
+		padding: 0;
+	}
+}
